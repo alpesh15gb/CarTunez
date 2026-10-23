@@ -1,0 +1,89 @@
+{
+  "release": "CARTUNEZ After Hours 8.0",
+  "assets": [
+    {
+      "name": "hero",
+      "prompt": "Use case: ads-marketing. Asset type: ultra-wide automotive homepage hero campaign photograph for CARTUNEZ Midnight Workshop. Create a truly exceptional photorealistic premium automotive editorial image, horizontal 16:9 at high resolution. A low, beautifully proportioned satin titanium silver custom grand touring coupe, elegant wide stance, black multispoke wheels, narrow bright white headlights, no visible manufacturer badges or text. Front three-quarter view, nose pointing right, entire vehicle visible with breathing room, vehicle occupies the lower-right two thirds of frame, large clean dark negative space in upper-left for headline overlay. Midnight bespoke tuning atelier, immense charcoal concrete walls, ceiling light slit reflected as a precise white ribbon along the hood and shoulder, a restrained deep red rectangular doorway far behind car on left. Polished dark concrete with subtle reflections, light architectural haze only. Camera low at car-wheel height, 40mm automotive campaign photography, realistic reflections and gorgeous high-end materials, crisp metal and wheels, cinematic black-silver palette with a single red architectural accent. The car must remain clearly readable, not lost in black shadows. Original design visualisation, not a real customer build. No typography, watermarks, people, extra cars, neon city, blue-purple lighting, garish effects, racing decals, busy workshop clutter, distorted geometry.",
+      "source": "assets/source/campaign-v8/hero.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "stance",
+      "prompt": "Use case: ads-marketing. Asset type: luxury automotive exterior detail editorial for CARTUNEZ. Horizontal 3:2 high resolution close photograph of the REAR quarter of a satin titanium silver custom coupe in a dark midnight atelier: sculpted rear wheel arch, exquisitely detailed satin graphite multispoke wheel with restrained bronze highlights, realistic black low-profile tire, carbon fibre side skirt. Crop tightly and boldly; the rear wheel fills the lower middle and left half, body sweeps diagonally into dark negative space at upper-right. Precise overhead white strip reflection on the silver fender, tiny warm red reflection across the concrete floor, very high photographic realism, tactile carbon weave and brushed metal, restrained black silver red palette. Show a real believable wheel and tire assembly, no impossible parts, no badges, text, watermark, people, fake glowing wheels or aggressive CGI look. Cinematic premium customization campaign, original design concept.",
+      "source": "assets/source/campaign-v8/stance.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "interior",
+      "prompt": "Use case: ads-marketing. Asset type: luxury custom cabin editorial photograph for CARTUNEZ. Horizontal 3:2 high resolution, close intimate view into an immaculate right-hand-drive sports coupe cabin, viewed through the open passenger door across the sculptural front seats and centre console. Espresso brown leather seat bolsters, black Alcantara insert, exquisite champagne contrast hand stitching, restrained quilt only in centre seat panels, brushed dark metallic controls, very subtle warm amber ambient light strip. Rich tactile real leather grain and fine seams, premium contemporary Indian car personalization mood. One overhead softbox grazes the seats, deep shadows with readable detail. Cinematic warm neutral image contrasts with the cool silver exterior campaign. Shot with 50mm automotive interior editorial lens, accurate plausible cabin geometry. No people, logos, text, computer UI, watermark, blue or purple light, clutter, plastic-looking leather or generic rendered dashboard. Original design concept, not actual customer photography.",
+      "source": "assets/source/campaign-v8/interior.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "audio",
+      "prompt": "Use case: ads-marketing. Asset type: automotive sound system detail photograph for CARTUNEZ midnight customization campaign. High resolution horizontal 3:2 professional product/editorial photograph. Immaculate black car door interior with a premium round component loudspeaker: precisely woven black speaker cone, fine machined satin aluminium ring, black leather trim with subtle champagne stitching. A second small tweeter is visible higher in the door, restrained warm white trim lighting. Oblique close-up camera looking across the door panel and speaker, speaker large in left half, luxurious leather recedes into shadows at right. Precision, tactile realism, soft directional atelier lighting and one narrow deep red reflected highlight, silver graphite black palette, very restrained. No logos, text, brand names, watermark, neon RGB, fake wave graphics, hands, exploded objects or impossible geometry. Original automotive design concept, not an installation photograph.",
+      "source": "assets/source/campaign-v8/audio.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "stitch",
+      "prompt": "Use case: ads-marketing. Asset type: tactile leather and upholstery macro for CARTUNEZ. High-resolution portrait 4:5 editorial macro photograph of a sculptural custom automotive seat: espresso-brown leather meets black perforated Alcantara at a clean curved seam, two perfectly parallel lines of warm champagne stitching, leather pebble grain and every stitch beautifully resolved. A small section of a diamond-quilted centre panel recedes in shallow depth of field. Raking warm neutral atelier light, gentle sculptural shadows, extraordinary tactile natural realism, premium bespoke automotive craft, no logos or wording, no watermark, no people, no plastic CGI surface. A calm, minimal intimate frame that can sit beside a wide midnight-car photograph.",
+      "source": "assets/source/campaign-v8/stitch.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "craft",
+      "prompt": "Use case: photorealistic-natural. Asset type: editorial craft-process photograph for CARTUNEZ. High-resolution horizontal 3:2 image. Tight documentary crop of an Indian automotive upholsterer's hands carefully aligning a pre-stitched espresso leather trim piece and black Alcantara on a clean graphite workbench, a restrained selection of leather swatches, one measuring ruler and an unbranded silver trim tool. Hands naturally posed with correct anatomy and professional precision, no face, no branded uniform, no visible shop identity. Warm industrial task light grazes the stitching and leather textures; background falls into dark neutral atelier shadows. Serious premium craft imagery, natural not staged stock-photo smiles. No text, watermarks, logos, glowing tools, clutter, wounds, extra fingers. This is a generated craft illustration, not claimed as CARTUNEZ staff or premises.",
+      "source": "assets/source/campaign-v8/craft.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "hero-mobile",
+      "prompt": "Use case: compositing. Asset type: art-directed PORTRAIT 9:16 mobile hero for CARTUNEZ. Use the reference for the EXACT satin titanium custom coupe appearance, black wheels, white headlights, charcoal concrete atelier, red doorway and premium photographic look. Recompose the scene as a beautiful portrait: low front three-quarter view of the same car, entire car fitting across the middle-to-lower frame with breathing room around the front bumper and both wheels; its roof around 48% image height, tires around 77%. Upper 40% is beautifully lit dark concrete negative space for headline overlay. Soft overhead white strip reflection, tiny architectural red glow at left, dark reflective floor below the vehicle. Preserve car design, material quality, studio authenticity and believable proportions, no stretching. No text, logos, people, watermark, purple light or decals.",
+      "source": "assets/source/campaign-v8/hero-mobile.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "profile",
+      "prompt": "Use case: ads-marketing. Asset type: horizontal 16:9 automotive silhouette editorial. Photograph a pristine satin titanium silver custom sports coupe in absolute side profile, nose right, entire car visible, on a deep charcoal concrete floor. Contemporary midnight atelier with a single long horizontal white ceiling softbox, making the roofline, long hood, wide fenders and black multispoke wheels beautifully readable. Car occupies centre horizontal 82% and middle-to-lower half, ample clean dark wall above. A tiny restrained red line reflected along the floor. High-end automotive launch-campaign realism, dramatic but luxurious and precise. No visible brands, no logos, no typography, no watermark, no people, no racing livery, no garish neon. Original vehicle design concept.",
+      "source": "assets/source/campaign-v8/profile.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "closing",
+      "prompt": "Use case: ads-marketing. Asset type: horizontal 16:9 cinematic final automotive website scene for CARTUNEZ. A satin titanium silver bespoke grand touring coupe viewed from low rear three-quarter angle, rear at right and nose pointing away left, beautiful narrow red taillights, graphite wheels and subtle carbon diffuser. The car is parked at the threshold of a vast dark concrete atelier opening onto a wet midnight road. A restrained red vertical architectural light on the right wall reflects softly on the polished floor, a thin cool white overhead reflection describes the body. Car occupies lower-right two thirds; upper-left and left half remain deep clean dark negative space for closing headline and CTA. Photorealistic, extraordinarily polished automotive editorial, no driving speed blur, no people, no text, no badges, no license plate wording, no watermark, no city clutter or blue-purple neon. Original design concept.",
+      "source": "assets/source/campaign-v8/closing.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "aero",
+      "prompt": "Use case: ads-marketing. Asset type: premium automotive carbon and aero detail. High-resolution horizontal 3:2 macro-like low angle photograph of the front corner of a satin titanium silver sports coupe: elegant front lip and side vent, flawless black carbon fibre weave, silver painted bumper, a narrow white LED headlamp above. Composition tight and diagonally sculptural with carbon lip in foreground lower-left and dark negative space upper-right. Grazing white atelier light brings out carbon weave and satin metal; tiny deep red reflection on charcoal floor. Realistic premium product craftsmanship, no brand marks, no writing or watermark, no false technical diagrams, no CGI impossible geometry. Original customization design concept.",
+      "source": "assets/source/campaign-v8/aero.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "performance",
+      "prompt": "Use case: product-mockup. Asset type: premium automotive performance-accessory editorial still life for CARTUNEZ. High-resolution horizontal 3:2 photograph: beautifully fabricated unbranded stainless steel performance exhaust silencer with twin satin titanium tips, a small black carbon fibre intake tube and a conical pleated air filter, carefully arranged diagonally on a dark charcoal workshop bench. A few precise brushed metal reflections and restrained warm red reflected light, black concrete backdrop, soft white industrial keylight. Very realistic materials and plausible well-made components, generous dark negative space around the arrangement, high-end technical campaign aesthetic. No labels, text, logos, specific horsepower claims, watermark, clutter, people, glowing or floating objects. These are illustrative product concepts, not a verified inventory catalogue.",
+      "source": "assets/source/campaign-v8/performance.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    },
+    {
+      "name": "utility",
+      "prompt": "Use case: ads-marketing. Asset type: premium utility and lighting automotive editorial for CARTUNEZ. High-resolution horizontal 3:2 cinematic photograph of a tastefully personalized graphite modern SUV with a clean low-profile black roof basket and warm-white auxiliary driving lights. Parked on a quiet rocky overlook at blue-hour dusk in an Indian highland landscape, sky understated charcoal grey, distant layered hills, light haze. Low rear-side three-quarter view, SUV occupying centre-right, real believable proportions, wheels and rack, no license plate text or visible badges. Sophisticated practical-adventure feeling, natural photographic textures, restrained colours; match a premium midnight workshop campaign rather than an off-road toy advert. No people, no exaggerated lift or monster tires, no brand marks, text, watermark, neon RGB. Original design direction, not a CARTUNEZ customer installation.",
+      "source": "assets/source/campaign-v8/utility.png",
+      "method": "Built-in image_gen",
+      "kind": "Generated campaign/editorial concept. Not a customer installation, staff portrait or inventory claim."
+    }
+  ]
+}

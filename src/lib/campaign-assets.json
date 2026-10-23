@@ -1,0 +1,354 @@
+{
+  "aero": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/aero-640.avif",
+        "webp": "/images/campaign/aero-640.webp",
+        "avifBytes": 24241,
+        "webpBytes": 37884
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/aero-960.avif",
+        "webp": "/images/campaign/aero-960.webp",
+        "avifBytes": 47555,
+        "webpBytes": 74258
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/aero-1440.avif",
+        "webp": "/images/campaign/aero-1440.webp",
+        "avifBytes": 88055,
+        "webpBytes": 136710
+      }
+    ]
+  },
+  "audio": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/audio-640.avif",
+        "webp": "/images/campaign/audio-640.webp",
+        "avifBytes": 17148,
+        "webpBytes": 27100
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/audio-960.avif",
+        "webp": "/images/campaign/audio-960.webp",
+        "avifBytes": 36141,
+        "webpBytes": 56900
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/audio-1440.avif",
+        "webp": "/images/campaign/audio-1440.webp",
+        "avifBytes": 68652,
+        "webpBytes": 108690
+      }
+    ]
+  },
+  "closing": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "avif": "/images/campaign/closing-640.avif",
+        "webp": "/images/campaign/closing-640.webp",
+        "avifBytes": 15584,
+        "webpBytes": 23604
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "avif": "/images/campaign/closing-960.avif",
+        "webp": "/images/campaign/closing-960.webp",
+        "avifBytes": 32826,
+        "webpBytes": 48478
+      },
+      {
+        "width": 1440,
+        "height": 810,
+        "avif": "/images/campaign/closing-1440.avif",
+        "webp": "/images/campaign/closing-1440.webp",
+        "avifBytes": 64830,
+        "webpBytes": 97116
+      }
+    ]
+  },
+  "craft": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/craft-640.avif",
+        "webp": "/images/campaign/craft-640.webp",
+        "avifBytes": 24580,
+        "webpBytes": 34742
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/craft-960.avif",
+        "webp": "/images/campaign/craft-960.webp",
+        "avifBytes": 51101,
+        "webpBytes": 73354
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/craft-1440.avif",
+        "webp": "/images/campaign/craft-1440.webp",
+        "avifBytes": 96775,
+        "webpBytes": 144328
+      }
+    ]
+  },
+  "hero-mobile": {
+    "width": 941,
+    "height": 1672,
+    "variants": [
+      {
+        "width": 480,
+        "height": 853,
+        "avif": "/images/campaign/hero-mobile-480.avif",
+        "webp": "/images/campaign/hero-mobile-480.webp",
+        "avifBytes": 25187,
+        "webpBytes": 37562
+      },
+      {
+        "width": 768,
+        "height": 1365,
+        "avif": "/images/campaign/hero-mobile-768.avif",
+        "webp": "/images/campaign/hero-mobile-768.webp",
+        "avifBytes": 47798,
+        "webpBytes": 74630
+      }
+    ]
+  },
+  "hero": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "avif": "/images/campaign/hero-640.avif",
+        "webp": "/images/campaign/hero-640.webp",
+        "avifBytes": 16148,
+        "webpBytes": 23858
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "avif": "/images/campaign/hero-960.avif",
+        "webp": "/images/campaign/hero-960.webp",
+        "avifBytes": 31319,
+        "webpBytes": 45964
+      },
+      {
+        "width": 1440,
+        "height": 810,
+        "avif": "/images/campaign/hero-1440.avif",
+        "webp": "/images/campaign/hero-1440.webp",
+        "avifBytes": 55968,
+        "webpBytes": 84570
+      }
+    ]
+  },
+  "interior": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/interior-640.avif",
+        "webp": "/images/campaign/interior-640.webp",
+        "avifBytes": 19865,
+        "webpBytes": 29284
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/interior-960.avif",
+        "webp": "/images/campaign/interior-960.webp",
+        "avifBytes": 37395,
+        "webpBytes": 55296
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/interior-1440.avif",
+        "webp": "/images/campaign/interior-1440.webp",
+        "avifBytes": 69337,
+        "webpBytes": 103238
+      }
+    ]
+  },
+  "performance": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/performance-640.avif",
+        "webp": "/images/campaign/performance-640.webp",
+        "avifBytes": 26388,
+        "webpBytes": 38748
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/performance-960.avif",
+        "webp": "/images/campaign/performance-960.webp",
+        "avifBytes": 49919,
+        "webpBytes": 74452
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/performance-1440.avif",
+        "webp": "/images/campaign/performance-1440.webp",
+        "avifBytes": 90044,
+        "webpBytes": 138346
+      }
+    ]
+  },
+  "profile": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "avif": "/images/campaign/profile-640.avif",
+        "webp": "/images/campaign/profile-640.webp",
+        "avifBytes": 14656,
+        "webpBytes": 21122
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "avif": "/images/campaign/profile-960.avif",
+        "webp": "/images/campaign/profile-960.webp",
+        "avifBytes": 28554,
+        "webpBytes": 41306
+      },
+      {
+        "width": 1440,
+        "height": 810,
+        "avif": "/images/campaign/profile-1440.avif",
+        "webp": "/images/campaign/profile-1440.webp",
+        "avifBytes": 52454,
+        "webpBytes": 76952
+      }
+    ]
+  },
+  "stance": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/stance-640.avif",
+        "webp": "/images/campaign/stance-640.webp",
+        "avifBytes": 19362,
+        "webpBytes": 30116
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/stance-960.avif",
+        "webp": "/images/campaign/stance-960.webp",
+        "avifBytes": 36079,
+        "webpBytes": 57534
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/stance-1440.avif",
+        "webp": "/images/campaign/stance-1440.webp",
+        "avifBytes": 65364,
+        "webpBytes": 104106
+      }
+    ]
+  },
+  "stitch": {
+    "width": 1122,
+    "height": 1402,
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "avif": "/images/campaign/stitch-480.avif",
+        "webp": "/images/campaign/stitch-480.webp",
+        "avifBytes": 26084,
+        "webpBytes": 39702
+      },
+      {
+        "width": 768,
+        "height": 960,
+        "avif": "/images/campaign/stitch-768.avif",
+        "webp": "/images/campaign/stitch-768.webp",
+        "avifBytes": 56271,
+        "webpBytes": 82310
+      },
+      {
+        "width": 1024,
+        "height": 1280,
+        "avif": "/images/campaign/stitch-1024.avif",
+        "webp": "/images/campaign/stitch-1024.webp",
+        "avifBytes": 84644,
+        "webpBytes": 122668
+      }
+    ]
+  },
+  "utility": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 640,
+        "height": 427,
+        "avif": "/images/campaign/utility-640.avif",
+        "webp": "/images/campaign/utility-640.webp",
+        "avifBytes": 28424,
+        "webpBytes": 39784
+      },
+      {
+        "width": 960,
+        "height": 640,
+        "avif": "/images/campaign/utility-960.avif",
+        "webp": "/images/campaign/utility-960.webp",
+        "avifBytes": 52938,
+        "webpBytes": 77234
+      },
+      {
+        "width": 1440,
+        "height": 960,
+        "avif": "/images/campaign/utility-1440.avif",
+        "webp": "/images/campaign/utility-1440.webp",
+        "avifBytes": 92586,
+        "webpBytes": 138328
+      }
+    ]
+  }
+}

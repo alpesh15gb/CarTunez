@@ -1,0 +1,7 @@
+BMW M6 GT3 Shiny & Evil
+Author: Alex.Ka. (https://sketchfab.com/Alex.Ka.)
+Source: https://sketchfab.com/3d-models/bmw-m6-gt3-shiny-evil-27956e4ebaaa468980bc48e50106d5c6
+Embedded licence: CC BY-NC-ND 4.0, https://creativecommons.org/licenses/by-nc-nd/4.0/
+The user supplied this file and explicitly confirmed separate commercial-use permission in the build conversation. Preserve that permission separately for production records.
+Technical preparation: deduplication, Draco compression, WebP textures capped at 1024px. Original meshes and materials retained. Original file archived under assets/source. Original floor/shadow plane hidden by runtime scene staging.
+Independent visual study. No affiliation or endorsement claimed.

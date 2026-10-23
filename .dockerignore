@@ -1,0 +1,12 @@
+.git
+.openai
+.deploy-state
+node_modules
+.next
+out
+assets/source
+docs
+*.tsbuildinfo
+.env*
+*.tar
+*.tar.gz

@@ -1,0 +1,14 @@
+type ProductKind = 'exhaust' | 'intake' | 'rack' | 'lighting' | 'touring';
+
+// Lightweight original vector studies keep the product rail crisp without image downloads.
+export function ProductStudy({ kind }: { kind: ProductKind }) {
+  return <svg className="product-illustration" viewBox="0 0 280 150" fill="none" aria-hidden="true" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round">
+    <defs><linearGradient id={`metal-${kind}`} x1="0" y1="0" x2="0" y2="1"><stop stopColor="#72747e" /><stop offset=".4" stopColor="#24262d" /><stop offset=".8" stopColor="#0e0f13" /><stop offset="1" stopColor="#454852" /></linearGradient></defs>
+    <ellipse cx="143" cy="128" rx="95" ry="9" fill="#000" stroke="none" opacity=".3" />
+    {kind === 'exhaust' && <g><path d="M52 91 123 51 194 70 124 111Z" fill={`url(#metal-${kind})`} /><path d="m52 91 3-25 70-39 69 19v24M55 66l69 20 70-40M124 86v25M122 53V28" /><path d="m194 53 35-20 17 5v27l-51 29" fill={`url(#metal-${kind})`} /><ellipse cx="239" cy="51" rx="14" ry="20" transform="rotate(27 239 51)" fill="#101114" stroke="#ff5360" /><path d="m53 80-23 12v16l32-18" /></g>}
+    {kind === 'intake' && <g><path d="m70 45 70-16 50 22v57l-50 18-70-23Z" fill={`url(#metal-${kind})`} /><ellipse cx="141" cy="77" rx="48" ry="50" fill="#191b20" transform="rotate(-15 141 77)" />{Array.from({length:12},(_,i)=><path key={i} d={`M${103+i*6} ${45-Math.sin(i/11*Math.PI)*14}v${66+Math.sin(i/11*Math.PI)*21}`} stroke="#9c5359" />)}<ellipse cx="141" cy="77" rx="48" ry="50" transform="rotate(-15 141 77)" /><path d="m188 63 41-12 15 7v26l-55 14" fill={`url(#metal-${kind})`} /><ellipse cx="238" cy="71" rx="10" ry="17" fill="#0a0a0b" /></g>}
+    {kind === 'rack' && <g><path d="m35 85 91-53 117 36-90 55Z" fill="#191b20" /><path d="m35 85 1-19 91-52 117 36-1 18M36 66l117 35 91-51M153 101v22" />{Array.from({length:7},(_,i)=><path key={i} d={`m${49+i*12} ${77-i*7} 112 34`} />)}<path d="m60 91-6 18m157-25 2 21m-87-66V23m-17 85v15m-68-37 112 35 85-53" stroke="#9b9da7" /></g>}
+    {kind === 'lighting' && <g><path d="m37 83 12-29 190-12 12 31-9 24-195 16Z" fill={`url(#metal-${kind})`} /><path d="m49 54 1 38 189-15V42M50 92l-3 21m192-36 3 20" />{Array.from({length:9},(_,i)=><ellipse key={i} cx={63+i*19} cy={73-i*1.3} rx="7" ry="13" stroke="#d0d6e2" fill="#262c35" />)}<path d="m67 113-5 13 23-2 3-12m112-9 5 13 22-2-6-13" stroke="#ff5360" /></g>}
+    {kind === 'touring' && <g><path d="m69 40 45-14 39 14v76l-40 16-44-19Z" fill={`url(#metal-${kind})`} /><path d="m69 40 44 18 40-18m-40 18v74m-29-83 28 12 27-10M88 73l45 36M133 70l-43 42m-4-77V21l28-8 22 9v11" /><path d="m166 71 43-15 27 12v46l-43 16-27-15Z" fill="#292d33" /><path d="m166 71 27 15 43-18m-43 18v44m-9-67V47l27-8 9 6v15M166 94l27 13 43-16" stroke="#9498a1" /><path d="m194 87 13-5v13l-13 5" stroke="#ff5360" /></g>}
+  </svg>;
+}

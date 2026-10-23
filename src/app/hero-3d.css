@@ -1,0 +1,59 @@
+/* The canvas remains fixed in its slot. All hero movement is inside Three.js. */
+.v11-replay { position: absolute; z-index: 5; right: var(--gutter); top: 110px; min-height: 44px; padding: 0 10px; display: inline-flex; align-items: center; gap: 9px; font-size: 9px; color: #c1cbd4; border: 1px solid #ffffff20; background: #080d1380; transition: color .2s, border-color .2s; }
+.v11-replay:hover { color: #fff; border-color: #ffffff60; }
+.v11-site:not([data-webgl=ready]) .v11-replay { visibility: hidden; }
+@media (max-width: 760px) { .v11-replay { top: 92px; width: 44px; justify-content: center; padding: 0; } .v11-replay span { display: none; } }
+.v10-hero-stage { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.v10-hero-world { position: absolute; inset: 0; }
+.v10-hero-world .garage-canvas { animation: none; transform: none; }
+.v10-hero-poster { position: absolute; width: 100%; height: 100%; object-fit: contain; object-position: 75% 55%; transition: opacity .35s; }
+.v10-site[data-webgl=ready] .v10-hero-stage:has(.garage-canvas) .v10-hero-poster { opacity: 0; }
+.v10-site .v8-hero-shade { pointer-events: none; background: linear-gradient(90deg, #07090c7a, transparent 46%), linear-gradient(0deg, #07090c 1%, transparent 19%, transparent 85%, #07090c50); }
+.v10-site .v8-hero-content { pointer-events: none; }
+.v10-site .v8-hero-actions { pointer-events: auto; }
+.v10-site .v8-hero h1 { font-size: clamp(82px, 10vw, 168px); }
+html[data-motion=full] .v10-site .v8-hero { min-height: 480px; }
+.v10-site .v9-hero-after { top: 18%; font-size: clamp(32px, 4.7vw, 74px); }
+.v10-hero-orbit { position: absolute; top: 18%; left: 0; right: 0; font-size: clamp(32px, 4.7vw, 74px); font-weight: 700; letter-spacing: -.065em; line-height: .98; opacity: 0; visibility: hidden; pointer-events: none; }
+.v10-hero-orbit > span { display: block; }
+.v10-shot-label { position: absolute; right: var(--gutter); bottom: 142px; display: grid; gap: 8px; text-align: right; font-size: 8px; letter-spacing: .15em; color: #b8c3d1; pointer-events: none; }
+.v10-shot-label b { font-weight: 500; color: #e8e7e1; font-size: 10px; }
+.v10-shot-label i { width: 35px; height: 2px; background: var(--mw-red); justify-self: end; margin-top: 4px; }
+html[data-motion=reduced] .v10-shot-label b, .v10-site[data-webgl=unavailable] .v10-shot-label b { display: none; }
+@media (min-width: 761px) and (max-width: 1000px) {
+  .v10-shot-label { bottom: 105px; }
+}
+@media (max-width: 760px) {
+  .v10-site .v8-hero-content { padding-top: 112px; }
+  .v10-site .v8-hero-content > .v8-label { font-size: 7px; margin-bottom: 18px; }
+  .v10-site .v8-hero h1 { font-size: clamp(58px, 17vw, 110px); }
+  .v10-site .v8-hero-description { font-size: 11px; margin-top: 12px; }
+  .v10-hero-stage { top: 30%; bottom: 15%; mask-image: linear-gradient(180deg, transparent, #000 20%, #000 82%, transparent); }
+  .v10-hero-poster { object-position: center; }
+  .v10-site .v8-hero-actions { bottom: 142px; }
+  .v10-site .v8-hero-actions .v8-text-link { display: none; }
+  .v10-site .v9-hero-after, .v10-hero-orbit { top: 19%; font-size: 9vw; }
+  .v10-shot-label { bottom: 200px; right: var(--gutter); font-size: 6px; gap: 5px; }
+  .v10-shot-label b { font-size: 7px; }
+  .v10-site .v8-hero-shade { background: linear-gradient(0deg, #07090c 10%, transparent 26%, transparent 72%, #07090c 90%); }
+}
+@media (max-width: 760px) and (max-height: 740px) {
+  .v10-site .v8-hero-content { padding-top: 100px; }
+  .v10-site .v8-hero h1 { font-size: 15vw; }
+  .v10-site .v8-hero-description { display: none; }
+  .v10-hero-stage { top: 24%; bottom: 21%; }
+  .v10-shot-label { bottom: 207px; }
+}
+@media (min-width: 761px) and (max-height: 600px) {
+  .v10-site .v8-hero-content { padding-top: 110px; }
+  .v10-site .v8-hero h1 { font-size: 8vw; }
+  .v10-site .v8-hero-description { font-size: 11px; margin: 10px 0; }
+  .v10-site .v8-hero-actions .v8-text-link { display: none; }
+}
+@media (max-height: 559px) {
+  .v10-shot-label { display: none; }
+}
+@media (min-width: 500px) and (max-width: 760px) and (max-height: 559px) {
+  .v10-site .v8-hero h1 { display: flex; gap: .2em; font-size: 8.5vw; }
+  .v10-hero-stage { top: 22%; bottom: 32%; }
+}

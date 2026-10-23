@@ -1,0 +1,120 @@
+/* Release 9: actual scroll-owned scenes. No viewport-width gate removes motion. */
+.v9-site .v8-hero { height: 100svh; min-height: 560px; max-height: none; }
+.v9-hero-after { position: absolute; top: 23%; left: 0; right: 0; z-index: 3; font-size: clamp(42px, 6.5vw, 104px); font-weight: 700; line-height: .98; letter-spacing: -.065em; opacity: 0; visibility: hidden; pointer-events: none; }
+.v9-hero-after > span { display: block; }
+.v9-hero-meter { position: absolute; top: -21px; left: var(--gutter); right: var(--gutter); height: 2px; overflow: hidden; background: #ffffff30; }
+.v9-hero-meter i, .v9-scene-meter i, .v9-cabin-meter i { display: block; width: 100%; height: 100%; background: var(--mw-red); transform: scaleX(0); transform-origin: left; }
+.v9-site .v8-hero-bottom::before { display: none; }
+.v9-scene-meter, .v9-cabin-meter { display: block; width: 150px; height: 2px; background: #ffffff30; margin-top: 13px; overflow: hidden; }
+.v9-site .v8-signature[data-pinned=true] .v8-story-stage { min-height: 560px; max-height: none; height: 100svh; }
+.v9-site .v8-signature[data-pinned=true] .v8-story-image { inset: 0 18% 0 -5%; }
+.v9-site .v8-signature[data-pinned=true] .v8-story-copy { left: 62%; top: 28%; }
+.v9-site .v8-signature[data-pinned=true] .v8-concept-note { bottom: 100px; }
+.v9-site .v8-story-top button { min-width: 52px; }
+.v9-site .v8-signature[data-pinned=true] .v8-story-top nav, .v9-cabin-scroll[data-pinned=true] .v9-cabin-top nav { background: #07090cbf; padding-inline: 12px; border: 1px solid #ffffff18; }
+.v8-interior-layout, .v8-craft-layout { perspective: 1400px; }
+.v9-site .r-audio-stage { position: relative; }
+.v9-receiver-halo { position: absolute; inset: -12px; pointer-events: none; border: 1px solid #e8483f55; opacity: 0; }
+.v9-site .v8-performance-photo { pointer-events: none; }
+.v9-sound-waves { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.v9-sound-waves span { position: absolute; left: 34%; top: 54%; width: 240px; height: 240px; margin: -120px; border-radius: 50%; border: 1px solid #ff6659; opacity: 0; }
+.v9-sound-waves span:nth-child(2) { width: 320px; height: 320px; margin: -160px; }
+.v9-sound-waves span:nth-child(3) { width: 400px; height: 400px; margin: -200px; }
+
+/* This chapter uses the existing aligned cabin assets. The product comparison
+   below it has separate controls and is never driven by the page scroll. */
+.v9-cabin-scroll { background: #0b0e12; position: relative; }
+.v9-cabin-stage { position: relative; }
+.v9-cabin-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 35px var(--gutter); border-top: 1px solid #ffffff25; }
+.v9-cabin-top nav { display: flex; gap: 22px; }
+.v9-cabin-top button { min-height: 44px; display: flex; gap: 9px; align-items: center; font-size: 9px; color: #a7adb5; border-bottom: 1px solid transparent; }
+.v9-cabin-top button[aria-pressed=true] { color: #fff; border-color: var(--mw-red); }
+.v9-cabin-frame { position: relative; }
+.v9-cabin-photo { position: relative; overflow: hidden; }
+.v9-cabin-photo img { width: 100%; height: 100%; object-fit: cover; }
+.v9-cabin-caption { position: relative; padding: 30px var(--gutter) 50px; }
+.v9-cabin-caption h2 { font-size: clamp(30px, 5.4vw, 80px); font-weight: 650; line-height: 1; letter-spacing: -.065em; margin: 18px 0; }
+.v9-cabin-caption > p:last-child { font-size: 13px; line-height: 1.7; color: #d1d4d9; }
+.v9-cabin-stitch { display: none; pointer-events: none; }
+.v9-cabin-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 25px var(--gutter); font-size: 8px; letter-spacing: .06em; color: #bdc3cc; }
+.v9-cabin-bottom a { display: inline-flex; min-height: 44px; align-items: center; gap: 22px; font-size: 11px; letter-spacing: 0; }
+.v9-cabin-disclosure { padding: 0 var(--gutter) 25px; color: #b1b6bf; font-size: 7px; letter-spacing: .04em; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-stage { height: 100svh; min-height: 560px; overflow: hidden; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-top { position: absolute; z-index: 7; top: 110px; left: 0; right: 0; padding-block: 0; border: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-top > p { color: #e8e7e1; background: #080b10c9; padding: 8px 10px; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-frames, .v9-cabin-scroll[data-pinned=true] .v9-cabin-frame { position: absolute; inset: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-photo { position: absolute; inset: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #07090c99, transparent 36%, #07090c66 60%, #07090cf2 87%); pointer-events: none; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-caption { position: absolute; z-index: 4; left: 0; right: 0; bottom: 120px; padding-block: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-stitch { display: block; position: absolute; z-index: 3; width: 100%; height: 100%; inset: 0; opacity: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-bottom { position: absolute; z-index: 6; bottom: 25px; left: 0; right: 0; padding-block: 0; }
+.v9-cabin-scroll[data-pinned=true] .v9-cabin-disclosure { position: absolute; z-index: 6; bottom: 88px; left: 0; right: 0; padding-bottom: 0; font-size: 6px; }
+
+@media(max-width: 959px) {
+  .v9-site .v8-signature[data-pinned=true] .v8-story-image { inset: 0; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-image img { object-position: 45% 40%; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-scene::after { background: linear-gradient(180deg, #07090c55, transparent 24%, #07090c55 45%, #07090cf2 73%, #07090c); }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy { left: var(--gutter); right: var(--gutter); top: auto; bottom: 112px; max-width: 640px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy h2 { font-size: clamp(34px, 6vw, 54px); margin: 14px 0 16px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy > p:not(.v8-label) { max-width: 480px; font-size: 12px; line-height: 1.65; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-tags { display: none; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy .v8-text-link { margin-top: 9px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-concept-note { top: 180px; bottom: auto; font-size: 6px; }
+  .v9-site .v8-story-top > .v8-label { font-size: 7px; }
+  .v9-cabin-top > .v8-label { font-size: 7px; }
+  .v9-cabin-caption h2 { font-size: clamp(32px, 6vw, 58px); }
+}
+@media(min-width: 761px) and (max-width: 950px) and (max-height: 750px) {
+  .v9-site .v8-hero-content { padding-top: 120px; }
+  .v9-site .v8-hero h1 { font-size: 10vw; }
+  .v9-site .v8-hero-description { font-size: 12px; margin-top: 16px; }
+}
+@media(max-width: 760px) {
+  html[data-motion=full] .v9-site .v8-hero { min-height: 560px; }
+  .v9-hero-after { top: 22%; font-size: clamp(36px, 10vw, 65px); }
+  .v9-hero-meter { top: -14px; }
+  .v9-site .v8-hero h1 { font-size: clamp(66px, 20.8vw, 110px); }
+  .v9-site .v8-hero-content { padding-top: 115px; }
+  .v9-site .v8-hero-description { margin-top: 14px; font-size: 11px; }
+  .v9-site .v8-hero-actions { bottom: 142px; }
+  .v9-site .v8-hero-bottom { bottom: 88px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-top { top: 105px; flex-direction: column; gap: 8px; align-items: stretch; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-top > .v8-label { padding: 5px 7px; width: max-content; font-size: 6px; }
+  .v9-site .v8-story-top nav { justify-content: space-between; gap: 15px; }
+  .v9-site .v8-story-top nav button { font-size: 10px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy { bottom: 151px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy h2 { font-size: clamp(29px, 8.2vw, 46px); margin: 12px 0; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy > p:not(.v8-label) { font-size: 11px; line-height: 1.65; max-width: 350px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy .v8-label { font-size: 7px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-bottom { bottom: 85px; font-size: 6px; gap: 10px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-bottom a { gap: 10px; font-size: 8px; }
+  .v9-scene-meter { width: 100px; margin-top: 10px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-concept-note { top: 193px; font-size: 5px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-top { top: 106px; flex-direction: column; align-items: stretch; gap: 7px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-top > p { font-size: 6px; padding: 5px 7px; width: max-content; }
+  .v9-cabin-top nav { justify-content: space-between; }
+  .v9-cabin-top button { font-size: 8px; gap: 8px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-photo img { object-position: 59% 50%; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-caption { bottom: 184px; }
+  .v9-cabin-caption h2 { font-size: clamp(31px, 8vw, 46px); margin-block: 13px; max-width: 420px; }
+  .v9-cabin-caption > p:last-child { font-size: 11px; max-width: 300px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-bottom { bottom: 86px; gap: 12px; }
+  .v9-cabin-bottom > span { font-size: 6px; }
+  .v9-cabin-bottom a { font-size: 9px; gap: 10px; max-width: 160px; line-height: 1.6; }
+  .v9-cabin-meter { width: 100px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-disclosure { bottom: 150px; font-size: 5px; line-height: 1.6; }
+  .v9-sound-waves span { width: 160px; height: 160px; margin: -80px; }
+  .v9-sound-waves span:nth-child(2) { width: 220px; height: 220px; margin: -110px; }
+  .v9-sound-waves span:nth-child(3) { width: 280px; height: 280px; margin: -140px; }
+}
+@media(max-width: 760px) and (max-height: 740px) {
+  .v9-site .v8-hero-content { padding-top: 105px; }
+  .v9-site .v8-hero-content > .v8-label { margin-bottom: 15px; }
+  .v9-site .v8-hero h1 { font-size: 19vw; }
+  .v9-site .v8-hero-description { margin-top: 9px; line-height: 1.6; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy { bottom: 138px; }
+  .v9-site .v8-signature[data-pinned=true] .v8-story-copy h2 { font-size: 28px; }
+  .v9-cabin-scroll[data-pinned=true] .v9-cabin-caption { bottom: 177px; }
+}
+html[data-motion=reduced] .v9-hero-after { display: none; }
+html[data-motion=reduced] .v9-hero-meter, html[data-motion=reduced] .v9-sound-waves { display: none; }

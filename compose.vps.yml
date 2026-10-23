@@ -1,0 +1,26 @@
+name: cartunez-cinematic
+x-runtime: &runtime
+  image: ${CARTUNEZ_IMAGE:?Run bash deploy/vps.sh stage first}
+  restart: unless-stopped
+  read_only: true
+  tmpfs:
+    - /tmp:size=64m,mode=1777
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  mem_limit: 128m
+  cpus: 0.5
+  pids_limit: 100
+  labels:
+    in.cartunez.application: cinematic-frontend
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: '2'
+services:
+  preview:
+    <<: *runtime
+    ports: ['127.0.0.1:3016:8080']
+  web:
+    <<: *runtime
+    ports: ['127.0.0.1:3015:8080']

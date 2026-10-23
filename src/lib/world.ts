@@ -1,0 +1,2 @@
+// Mutable renderer state keeps React out of the animation loop.
+export const world: { hero: number; body: number; closing: number; view: 'auto' | 'front' | 'profile' | 'rear'; revision: number; workshopActive: boolean; workshopAngle: number; workshopLight: 'midnight' | 'day'; rim: string } = { hero: 0, body: 0, closing: 0, view: 'auto', revision: 0, workshopActive: true, workshopAngle: .78, workshopLight: 'midnight', rim: 'original' };
