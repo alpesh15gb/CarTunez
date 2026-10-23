@@ -51,6 +51,8 @@ curl -fsS https://cartunez.in/release.json
 
 Every image is tagged with its full Git commit, so a build never overwrites the previous release's image. Stage and promote must use the same clean commit. No force pull/reset or whole-stack restart is required.
 
+If an earlier staging attempt failed with `unknown flag: --format` from Buildx, run `git pull --ff-only` and retry `bash deploy/vps.sh stage` in the existing checkout. The script now reads the documented plain `buildx inspect` output, so no Docker upgrade or daemon restart is needed. It reuses the dedicated builder created by the failed attempt. Staging does not stop the current frontend.
+
 ## Resource and ownership checks
 
 The script requires Bash, Git, Docker Compose, Buildx, curl, `ss`, `flock` and `sha256sum`. Staging uses a dedicated builder, with 2 GiB RAM, no extra swap and a 1.5 CPU limit; it stops that builder after building. It requires at least 2.5 GiB currently available RAM before a build. If resources or preview port 3016 are unavailable, it exits without stopping the current frontend. Runtime containers are capped at 128 MiB, 0.5 CPU and 100 processes, run without root capabilities and use a read-only filesystem with only a temporary writable directory.
@@ -76,7 +78,7 @@ Transfer that archive to the VPS, run `docker image load -i cartunez-image.tar`,
 - Actual resource-limited Linux Docker build: Next.js static export and TypeScript pass.
 - Runtime tested with the same read-only filesystem, capabilities, memory/CPU caps and temporary directory as the Compose services.
 - HTTP checks pass for homepage, enquiry, model, decoder and poster; binary types and range response are correct.
-- `deploy/test-vps.sh`: isolated tests mock Docker and curl, covering staging without production changes, failed assets, wrong ownership, successful promotion/manual rollback, automatic rollback on failed production health and recovery to a previous cinematic image.
+- `deploy/test-vps.sh`: isolated tests mock Docker and curl, covering Buildx compatibility without `--format`, existing/new builders, resource limits and build failure cleanup, staging without production changes, failed assets, wrong ownership, successful promotion/manual rollback, automatic rollback on failed production health and recovery to a previous cinematic image.
 
 Run the failure-path tests in a disposable Bash container:
 

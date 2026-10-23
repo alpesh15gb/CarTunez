@@ -102,11 +102,15 @@ if [[ "$MODE" == stage ]]; then
     if ! docker buildx inspect "$BUILDER" >/dev/null 2>&1; then
       docker buildx create --name "$BUILDER" --driver docker-container --driver-opt memory=2g,memory-swap=2g,cpu-period=100000,cpu-quota=150000 >/dev/null
     fi
-    [[ $(docker buildx inspect "$BUILDER" --format '{{.Driver}}') == docker-container ]] || die 'Unexpected builder driver.'
+    # Plain inspect output also works on Buildx versions without --format.
+    builder_details=$(LC_ALL=C docker buildx inspect "$BUILDER") || die 'Could not inspect the Cartunez builder.'
+    builder_driver=$(awk '$1 == "Driver:" { print $2; exit }' <<<"$builder_details")
+    [[ "$builder_driver" == docker-container ]] || die 'Unexpected builder driver.'
+    # Arm cleanup before bootstrap so failed resource checks also stop this builder.
+    BUILD_ACTIVE=1
     docker buildx inspect "$BUILDER" --bootstrap >/dev/null
     [[ $(inspect "buildx_buildkit_${BUILDER}0" '{{.HostConfig.Memory}}') == 2147483648 ]] || die 'Builder memory limit mismatch.'
     [[ $(inspect "buildx_buildkit_${BUILDER}0" '{{.HostConfig.CpuQuota}}') == 150000 ]] || die 'Builder CPU limit mismatch.'
-    BUILD_ACTIVE=1
     docker buildx build --builder "$BUILDER" --load --build-arg "SOURCE_COMMIT=$REVISION" --tag "$CARTUNEZ_IMAGE" "$ROOT"
     docker buildx stop "$BUILDER"
     BUILD_ACTIVE=0
