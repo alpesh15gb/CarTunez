@@ -4,12 +4,26 @@ export const site = {
   phone: '+919949695030',
   phoneDisplay: '+91 99496 95030',
   whatsapp: '919949695030',
-  // Supply verified workshop details here. Missing details are never fabricated.
-  address: '',
-  city: '',
-  mapsUrl: '',
+  // First-party source: CARTUNEZ's previously indexed homepage, checked 2026-10-24.
+  // Keep this identical to the Google Business Profile. Hours/pin/ratings are not inferred.
+  address: 'Shop No. 12 & 13, Veer Hanuman Temple, S.P. Road',
+  city: 'Secunderabad',
+  region: 'Telangana',
+  postalCode: '500003',
+  serviceArea: 'Hyderabad & Secunderabad',
+  email: 'adnan@cartunez.in',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=CARTUNEZ%20Shop%2012%2013%20Veer%20Hanuman%20Temple%20SP%20Road%20Secunderabad%20500003',
   instagramUrl: '',
 };
+
+export const serviceNavigation = [
+  { slug: 'car-interiors-seat-covers', label: 'Interiors & seat covers' },
+  { slug: 'body-kits-conversions', label: 'Body kits & conversions' },
+  { slug: 'pioneer-infotainment-car-audio', label: 'Pioneer infotainment & audio' },
+  { slug: 'car-floor-mats', label: '3D & 7D floor mats' },
+  { slug: 'ambient-car-lighting', label: 'Ambient car lighting' },
+  { slug: 'performance-utility', label: 'Performance & utility' },
+] as const;
 
 export const categories = [
   { id: 'interiors', number: '01', name: 'Interiors & seating', fullName: 'Custom Interiors & Seating', short: 'Interiors', line: 'A different feeling. Every time you get in.' },

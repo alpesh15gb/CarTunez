@@ -41,6 +41,8 @@ On first deployment, this stops only the new frontend and starts the retained ol
 
 ## Later updates
 
+The SEO/local-search update uses the same isolated update procedure below. Its build verifies all ten public pages, structured data, canonical/social URLs and internal links. After promotion, check `/services/`, `/visit/` and `/sitemap.xml`. Search Console and Google Business Profile follow-up steps are documented in `docs/SEO-GEO.md`.
+
 ```bash
 cd /opt/cartunez-cinematic
 git pull --ff-only

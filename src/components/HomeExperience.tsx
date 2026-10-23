@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import dynamic from 'next/dynamic';
 import { ArrowDown, Check, Headphones, MessageCircle, Navigation, Phone, RotateCcw, SlidersHorizontal } from 'lucide-react';
 import { useMotion } from './MotionProvider';
@@ -21,7 +21,7 @@ const GarageWorld = dynamic(() => import('./GarageWorld'), { ssr: false });
 const InfotainmentDemo = dynamic(() => import('./InfotainmentDemo'));
 const CabinStudio = dynamic(() => import('./CabinStudio'));
 
-export function HomeExperience() {
+export function HomeExperience({ serviceContent }: { serviceContent: ReactNode }) {
   const root = useRef<HTMLElement>(null);
   const { full } = useMotion();
   const { build, toggle } = useBuild();
@@ -76,7 +76,8 @@ export function HomeExperience() {
 
     <section className="v8-builds section-gutter" id="builds" aria-labelledby="builds-title"><div><p className="v8-label">YOUR CAR / THE NEXT CHAPTER</p><h2 id="builds-title"><LineHeading>BUILT</LineHeading><LineHeading>DIFFERENT<span className="red">.</span></LineHeading></h2><TransitionLink className="v8-text-link" href="/enquire/">Start your own build brief <Arrow /></TransitionLink></div><BuildPortfolio /></section>
 
-    <section className="v8-questions section-gutter" aria-labelledby="questions-title"><div><p className="v8-label">BEFORE THE FIRST UPGRADE</p><h2 id="questions-title">A FEW GOOD<br />QUESTIONS<span className="red">.</span></h2></div><div>{[{ title: 'Will it fit my car?', text: 'Share your make, model and year in the workshop or enquiry form. The team confirms compatibility and installation scope before recommending a product.' }, { title: 'What will my build cost?', text: 'Save the directions you like and request a quote. The final price depends on your car, the selected products and the work required. No automatic estimate is presented here.' }, { title: 'Can I arrange a workshop visit?', text: 'Choose a visit request in the enquiry flow or call the team. Location, timing and availability are confirmed in the conversation.' }].map(item => <details key={item.title}><summary>{item.title}<span aria-hidden="true">+</span></summary><p>{item.text}</p></details>)}</div></section>
+    {serviceContent}
+    <section className="v8-questions section-gutter" aria-labelledby="questions-title"><div><p className="v8-label">BEFORE THE FIRST UPGRADE</p><h2 id="questions-title">A FEW GOOD<br />QUESTIONS<span className="red">.</span></h2></div><div>{[{ title: 'Will it fit my car?', text: 'Share your make, model and year in the workshop or enquiry form. The team confirms compatibility and installation scope before recommending a product.' }, { title: 'What will my build cost?', text: 'Save the directions you like and request a quote. The final price depends on your car, the selected products and the work required. No automatic estimate is presented here.' }, { title: 'Can I arrange a workshop visit?', text: 'Visit CARTUNEZ on S.P. Road in Secunderabad, Hyderabad. Choose a visit request in the enquiry flow or call the team to confirm timing and availability before travelling.' }].map(item => <details key={item.title}><summary>{item.title}<span aria-hidden="true">+</span></summary><p>{item.text}</p></details>)}</div></section>
 
     <section className="v8-closing" aria-labelledby="closing-title"><CampaignImage name="closing" alt="Silver coupe with red taillights at the threshold of a midnight atelier, generated closing campaign concept" className="v8-closing-image" /><div className="v8-closing-shade" aria-hidden="true" /><div className="v8-closing-copy section-gutter"><p className="v8-label">YOUR NEXT CHAPTER STARTS HERE.</p><h2 id="closing-title"><LineHeading>READY TO</LineHeading><LineHeading>MAKE IT YOURS<span className="red">?</span></LineHeading></h2><p>Bring the car. Bring the idea.<br />Let’s shape what comes next.</p><Magnetic><a className="v8-button" href={quote} target="_blank" rel="noopener noreferrer"><MessageCircle size={19} />Start on WhatsApp<Arrow size={21} /></a></Magnetic><div className="v8-closing-links"><TransitionLink href="/enquire/?intent=visit">Plan a workshop visit <Arrow size={16} /></TransitionLink><a href={`tel:${site.phone}`}><Phone size={15} />{site.phoneDisplay}</a></div></div><span className="v8-closing-credit">CARTUNEZ / GENERATED DESIGN VISUALISATION</span></section>
     <Footer />

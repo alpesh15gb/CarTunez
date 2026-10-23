@@ -4,6 +4,8 @@ import { SiteChrome } from '@/components/SiteChrome';
 import { BuildProvider } from '@/components/BuildProvider';
 import { MotionProvider } from '@/components/MotionProvider';
 import { site } from '@/lib/site';
+import { businessGraph, pageMetadata } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 import './globals.css';
 import './refinement.css';
 import './infotainment.css';
@@ -14,32 +16,24 @@ import './midnight.css';
 import './campaign.css';
 import './scroll-experience.css';
 import './hero-3d.css';
+import './services.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
+  ...pageMetadata('Car Accessories & Customisation in Hyderabad', 'CARTUNEZ, Secunderabad: car interiors, seat covers, body kits, Pioneer audio, floor mats and ambient lighting. Explore options and request a quote.', '/'),
   metadataBase: new URL(site.url),
-  title: { default: 'CARTUNEZ — The Midnight Workshop.', template: '%s | CARTUNEZ' },
-  description: 'Ordinary ends here. Explore the CARTUNEZ Midnight Workshop, configure your upgrade preferences and request a quote for your car.',
-  openGraph: { title: 'CARTUNEZ — The Midnight Workshop.', description: 'Car customisation. Personal by design.', url: site.url, siteName: site.name,
-    locale: 'en_IN', type: 'website', images: [{ url: '/images/campaign/og-v8.jpg', width: 1200, height: 630, alt: 'Silver custom coupe in the CARTUNEZ concept garage' }] },
-  twitter: { card: 'summary_large_image' },
-  robots: { index: true, follow: true },
+  title: { default: 'Car Accessories & Customisation in Hyderabad | CARTUNEZ', template: '%s | CARTUNEZ' },
+  applicationName: site.name, category: 'automotive',
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true,
+    'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } },
 };
 export const viewport: Viewport = { themeColor: '#07090C', width: 'device-width', initialScale: 1 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const business = { '@context': 'https://schema.org', '@type': 'AutomotiveBusiness', name: site.name,
-    url: site.url, telephone: site.phone, image: `${site.url}/images/cartunez-logo.webp`,
-    description: 'Car accessories and customisation: interiors, body kits, infotainment, audio, performance and utility.',
-    ...(site.address && site.city ? { address: { '@type': 'PostalAddress', streetAddress: site.address, addressLocality: site.city, addressCountry: 'IN' } } : {}),
-    ...(site.instagramUrl ? { sameAs: [site.instagramUrl] } : {}),
-  };
-  return <html lang="en" className={inter.variable}><head>
-    <link rel="preload" as="image" type="image/webp" href="/images/bmw-studio-poster.webp" fetchPriority="high" />
-  </head><body>
+  return <html lang="en-IN" className={inter.variable}><body>
     <a className="skip-link" href="#main">Skip to content</a>
     <MotionProvider><BuildProvider><SiteChrome>{children}</SiteChrome></BuildProvider></MotionProvider>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(business).replace(/</g, '\\u003c') }} />
+    <JsonLd data={businessGraph} />
   </body></html>;
 }
