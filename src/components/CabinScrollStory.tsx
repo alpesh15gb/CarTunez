@@ -6,9 +6,9 @@ import { useMotion } from './MotionProvider';
 import { Arrow } from './Primitives';
 
 const chapters = [
-  { title: 'THE STARTING POINT.', label: '01 / AS IT ARRIVES', image: 'factory', copy: 'A familiar cabin. A new perspective.', alt: 'Factory floor mats in the aligned generated cabin concept' },
-  { title: 'MADE TO FEEL DIFFERENT.', label: '02 / A BETTER FOUNDATION', image: 'matting-cocoa', copy: 'Cocoa quilt. Considered coverage. A different kind of detail.', alt: 'Cocoa quilt matting in the same aligned generated cabin concept' },
-  { title: 'AFTER DARK. ALL YOURS.', label: '03 / THE FINAL ATMOSPHERE', image: 'lighting-amber', copy: 'A warm line of light changes the whole mood.', alt: 'Warm amber ambient lighting added to the same generated cabin concept' },
+  { title: 'YOUR CABIN, AS IT IS.', label: '01 / STANDARD MATS', image: 'factory', copy: 'Start with the original interior.', alt: 'Car cabin with standard floor mats' },
+  { title: 'ADD CUSTOM MATTING.', label: '02 / COCOA QUILT', image: 'matting-cocoa', copy: 'Compare the coverage, colour and quilted finish.', alt: 'The same cabin with cocoa quilt floor mats' },
+  { title: 'NOW ADD SOME LIGHT.', label: '03 / AMBIENT LIGHTING', image: 'lighting-amber', copy: 'Warm amber lighting along the dashboard and doors.', alt: 'The cabin with warm amber dashboard and door lighting' },
 ];
 
 export function CabinScrollStory() {
@@ -63,7 +63,6 @@ export function CabinScrollStory() {
       </article>)}</div>
       <svg className="v9-cabin-stitch" viewBox="0 0 1200 800" aria-hidden="true"><path d="M80 690 Q130 520 380 540 L470 755 M670 755 L765 530 Q960 500 1130 650" fill="none" stroke="#ffc787" strokeWidth="2" strokeDasharray="5 7" /></svg>
       <div className="v9-cabin-bottom"><span>ONE CABIN. THREE CHAPTERS.<span className="v9-cabin-meter" aria-hidden="true"><i /></span></span><a href="#cabin-studio">Now make your own comparison <Arrow size={17} /></a></div>
-      <p className="v9-cabin-disclosure">ALIGNED GENERATED CONCEPTS / ACTUAL FIT & FINISH REQUIRE CONFIRMATION</p>
     </div>
   </section>;
 }

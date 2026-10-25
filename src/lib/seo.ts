@@ -15,7 +15,7 @@ export function pageMetadata(title: string, description: string, path: string): 
       type: 'website', locale: 'en_IN', siteName: site.name, url,
       title: socialTitle, description,
       images: [{ url: absoluteUrl('/images/campaign/og-v8.jpg'), width: 1200, height: 630,
-        alt: 'CARTUNEZ automotive customisation — illustrative midnight garage concept' }],
+        alt: 'CARTUNEZ car accessories and customisation in Hyderabad' }],
     },
     twitter: { card: 'summary_large_image', title: socialTitle, description,
       images: [absoluteUrl('/images/campaign/og-v8.jpg')] },

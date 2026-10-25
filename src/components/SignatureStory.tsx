@@ -7,9 +7,9 @@ import { CampaignImage } from './CampaignImage';
 import { Arrow } from './Primitives';
 
 const scenes = [
-  { name: 'Presence', image: 'profile', title: ['PRESENCE.', 'BEFORE A WORD.'], text: 'A silhouette with its own point of view. Explore exterior styling that changes how your car enters a room.', tag: 'BODY / PROPORTION / PERSONALITY', alt: 'Silver coupe in side profile under a precise studio light, generated exterior concept' },
-  { name: 'Stance', image: 'stance', title: ['THE STANCE.', 'THE STATEMENT.'], text: 'The wheel. The arch. The way they meet. Start with a finish you love, then let us check the dimensions that belong on your car.', tag: 'WHEELS / FINISH / FITMENT', alt: 'Detailed graphite wheel, sculpted silver arch and carbon side skirt, generated concept' },
-  { name: 'Detail', image: 'aero', title: ['SMALL DETAILS.', 'BIG DIFFERENCE.'], text: 'A considered edge. A material that catches the light. A finish that brings the whole build together.', tag: 'AERO / MATERIAL / FINISH', alt: 'Close view of silver bodywork and a carbon front lip, generated styling concept' },
+  { name: 'Body kits', image: 'profile', title: ['A NEW LOOK.', 'SAME CAR.'], text: 'Front lips, side skirts and body kits. Tell us the look you want for your car.', tag: 'BODY KITS / EXTERIOR STYLING', alt: 'Silver coupe shown from the side' },
+  { name: 'Wheels', image: 'stance', title: ['WHEELS THAT', 'SUIT YOUR CAR.'], text: 'Compare wheel styles and finishes. We’ll help you check the right size and fit.', tag: 'ALLOYS / COLOUR / FITMENT', alt: 'Graphite alloy wheel beneath a silver wheel arch' },
+  { name: 'Finishing touches', image: 'aero', title: ['THE FINISHING', 'TOUCHES.'], text: 'A front splitter, a spoiler or new trim. Sometimes a small change is all you need.', tag: 'SPLITTERS / SPOILERS / TRIM', alt: 'Silver front bumper with a black front splitter' },
 ];
 
 export function SignatureStory() {
@@ -72,11 +72,10 @@ export function SignatureStory() {
 
   return <section className="v8-signature" ref={root} id="bodykits" aria-label="Exterior styling, a story in three details">
     <div className="v8-story-stage" ref={stage}>
-      <div className="v8-story-top"><span className="v8-label">01 / AN EXTERIOR POINT OF VIEW</span><nav aria-label="Explore exterior chapters">{scenes.map((scene, index) => <button key={scene.name} aria-pressed={active === index} onClick={() => go(index)}><small>0{index + 1}</small>{scene.name}</button>)}</nav></div>
+      <div className="v8-story-top"><span className="v8-label">01 / EXTERIOR UPGRADES</span><nav aria-label="Explore exterior chapters">{scenes.map((scene, index) => <button key={scene.name} aria-pressed={active === index} onClick={() => go(index)}><small>0{index + 1}</small>{scene.name}</button>)}</nav></div>
       <div className="v8-story-scenes">{scenes.map((scene, index) => <article className="v8-story-scene" id={`exterior-scene-${index}`} key={scene.name}>
         <CampaignImage name={scene.image} alt={scene.alt} className="v8-story-image" />
-        <div className="v8-story-copy"><p className="v8-label">0{index + 1} / {scene.name.toUpperCase()}</p><h2>{scene.title.map(line => <span key={line}>{line}</span>)}</h2><p>{scene.text}</p><span className="v8-story-tags">{scene.tag}</span><a className="v8-text-link" href="#workshop">Explore your exterior direction <Arrow /></a></div>
-        <span className="v8-concept-note">CARTUNEZ DESIGN STUDY / GENERATED CAMPAIGN IMAGE</span>
+        <div className="v8-story-copy"><p className="v8-label">0{index + 1} / {scene.name.toUpperCase()}</p><h2>{scene.title.map(line => <span key={line}>{line}</span>)}</h2><p>{scene.text}</p><span className="v8-story-tags">{scene.tag}</span><a className="v8-text-link" href="#workshop">Choose your upgrades <Arrow /></a></div>
       </article>)}</div>
       <div className="v8-story-bottom"><span>SCROLL TO TRANSFORM <span aria-hidden="true">↓</span><span className="v9-scene-meter" aria-hidden="true"><i /></span></span><a href="#interiors">The inside story <Arrow size={16} /></a></div>
     </div>

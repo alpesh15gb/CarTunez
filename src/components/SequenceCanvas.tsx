@@ -81,6 +81,6 @@ export const SequenceCanvas = forwardRef<SequenceHandle>(function SequenceCanvas
     <canvas ref={canvas} className="sequence-canvas" aria-hidden="true" />
     {!hasFrames && <svg className="body-outline" viewBox="0 0 1000 667" aria-hidden="true"><path className="kit-line" d="M70 488 L320 509 L410 493 M420 497 L831 492 L904 466 M830 247 L915 243 L920 272" /></svg>}
     <div className="body-callout callout-lip"><span>01</span> FRONT LIP<i /></div><div className="body-callout callout-skirt"><span>02</span> SIDE SKIRTS<i /></div><div className="body-callout callout-spoiler"><span>03</span> REAR SPOILER<i /></div><div className="body-callout callout-diffuser"><span>04</span> DIFFUSER<i /></div>
-    <span className="visual-caption">{hasFrames ? 'SCROLL TO TRANSFORM' : 'CONCEPT VISUAL · SEQUENCE READY'}</span>
+    <span className="visual-caption">{hasFrames ? 'SCROLL TO TRANSFORM' : 'BODY KITS & EXTERIOR STYLING'}</span>
   </div>;
 });

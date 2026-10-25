@@ -19,7 +19,7 @@ The update adds:
 
 `src/lib/site.ts` is the source of truth for contact information. The address and email were recovered from CARTUNEZ's first-party homepage as indexed on 24 October 2026: Shop No. 12 & 13, Veer Hanuman Temple, S.P. Road, Secunderabad, Hyderabad, Telangana 500003; adnan@cartunez.in. Phone +91 99496 95030 was supplied by the owner. Ensure this exactly matches the current Google Business Profile. The Maps link is a business/address search, not a verified place-ID pin.
 
-Use `src/lib/services.ts` to update actual services and product guidance. Keep visible text and schema in agreement. Product previews remain labelled as concepts; they are not represented as customer evidence. Get permission for real customer photographs and publish real vehicle, product and installation details before adding case-study pages. Do not add fictional testimonials, ratings, brand authorisation or performance results.
+Use `src/lib/services.ts` to update actual services and product guidance. Keep visible text and schema in agreement. The footer identifies visual previews; they are not represented as customer evidence. Get permission for real customer photographs and publish real vehicle, product and installation details before adding case-study pages. Do not add fictional testimonials, ratings, brand authorisation or performance results.
 
 ## After the VPS update
 

@@ -195,7 +195,7 @@ export default function GarageWorld() {
     return () => {
       disposed = true; gsap.ticker.remove(tick); window.removeEventListener('scroll', markDirty); window.removeEventListener('resize', markDirty); window.removeEventListener('cartunez:view', markDirty); window.removeEventListener('cartunez:reignite', reignite); document.removeEventListener('visibilitychange', markDirty);
       renderer.domElement.removeEventListener('webglcontextlost', contextLost); renderer.domElement.remove(); draco.dispose(); env.dispose(); disposeObject(scene); renderer.dispose(); renderer.forceContextLoss(); delete main.dataset.webgl;
-      const status = main.querySelector('[data-hero-status]'); if (status) status.textContent = 'BMW M6 GT3 / REFERENCE STUDY';
+      const status = main.querySelector('[data-hero-status]'); if (status) status.textContent = 'BMW M6 GT3';
     };
   }, []);
   return null;
